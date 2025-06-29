@@ -166,6 +166,14 @@ footer {
   display: block;
 }
 
+@media (max-width: 768px) {
+
+  footer {
+    bottom: 10px;
+  }
+  
+}
+
 @keyframes metallicShine {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
