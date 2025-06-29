@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eazy Inspections & Remodeling</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+  <!-- Logo outside navbar -->
+  <div class="logo">
+    <img src="img/logo.png" alt="Eazy Inspections Logo">
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="slideshow">
+      <div class="slide fade" style="background-image: url('img/project1.jpg')"></div>
+      <div class="slide fade" style="background-image: url('img/project2.jpg')"></div>
+      <div class="slide fade" style="background-image: url('img/project3.jpg')"></div>
+    </div>
+    <div class="hero-content">
+      <h1>Welcome to Eazy Inspections & Remodeling</h1>
+      <p>Professional Construction & Inspection Services</p>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Request Consultation</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="img/instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="img/facebook.svg" alt="Facebook" />
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.opacity = 0;
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.opacity = 1;
+      setTimeout(showSlides, 5000);
+    }
+    showSlides();
+  </script>
+</body>
+</html>
