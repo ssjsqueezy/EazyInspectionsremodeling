@@ -168,11 +168,40 @@ footer {
 
 @media (max-width: 768px) {
 
-.social-icons {
-    margin-top: 200px; /* 👈 Move icons further down */
+  /* Center the navbar contents */
+  .navbar {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
   }
-  
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 200px; /* 👈 Adjust as needed */
+  }
+
+  /* Optional: ensure hero stays centered vertically on smaller screens */
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem; /* prevent overlap with nav */
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
 }
+
 
 @keyframes metallicShine {
   0% { background-position: 0% 50%; }
