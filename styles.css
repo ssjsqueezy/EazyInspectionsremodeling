@@ -169,7 +169,7 @@ footer {
 @media (max-width: 768px) {
 
 .social-icons {
-    margin-top: 2rem; /* 👈 Move icons further down */
+    margin-top: -200px; /* 👈 Move icons further down */
   }
   
 }
