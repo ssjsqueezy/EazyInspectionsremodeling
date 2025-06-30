@@ -144,7 +144,7 @@ footer {
   background-color: transparent;
   padding: 1rem 2rem;
   text-align: right;
-  position: relative; /* changed from absolute */
+  position: absolute; /* changed from absolute */
   width: 100%;
   z-index: 10;
   box-sizing: border-box;
