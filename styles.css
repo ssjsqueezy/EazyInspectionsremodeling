@@ -167,49 +167,6 @@ footer {
   display: block;
 }
 
-@media (max-width: 768px) {
-
-  /* Make footer flow normally, not absolute */
-  footer {
-    position: relative;
-    text-align: center;
-    padding: 2rem 1rem 4rem;
-    display: block;
-  }
-
-  .social-icons {
-    justify-content: center;
-    margin-top: 4rem; /* 👈 pushes the icons lower in the view */
-    position: relative; /* ensures it's not locked to the bottom */
-  }
-
-  .navbar {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .hero {
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 5rem; /* to avoid overlap with navbar */
-    text-align: center;
-  }
-
-  .hero-content {
-    width: 90%;
-    padding: 1.5rem;
-  }
-}
-
-
 @keyframes metallicShine {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
