@@ -170,6 +170,7 @@ footer {
 
 .social-icons {
     bottom: -10px; /* 👈 Move icons further down */
+    padding-top: 20px;
   }
   
 }
