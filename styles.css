@@ -144,12 +144,13 @@ footer {
   background-color: transparent;
   padding: 1rem 2rem;
   text-align: right;
-  position: absolute;
-  bottom: 20px;
+  position: relative; /* changed from absolute */
   width: 100%;
   z-index: 10;
   box-sizing: border-box;
+  margin-top: 3rem;
 }
+
 
 .social-icons {
   display: flex;
@@ -168,24 +169,46 @@ footer {
 
 @media (max-width: 768px) {
 
+  /* Make footer flow normally, not absolute */
   footer {
-  background-color: transparent;
-  padding: 1rem 2rem;
-  text-align: right;
-  bottom: 20px;
-  width: 100%;
-  z-index: 10;
-  box-sizing: border-box;
-  display: flex;
+    position: relative;
+    text-align: center;
+    padding: 2rem 1rem 4rem;
+    display: block;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 4rem; /* 👈 pushes the icons lower in the view */
+    position: relative; /* ensures it's not locked to the bottom */
+  }
+
+  .navbar {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem; /* to avoid overlap with navbar */
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 90%;
+    padding: 1.5rem;
+  }
 }
 
-.social-icons {
-    position: absolute;
-    bottom: 100px; /* 👈 Move icons further down */
-    gap: 1rem;
-  }
-  
-}
 
 @keyframes metallicShine {
   0% { background-position: 0% 50%; }
