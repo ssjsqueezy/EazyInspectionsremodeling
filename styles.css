@@ -169,7 +169,7 @@ footer {
 @media (max-width: 768px) {
 
   footer {
-    bottom: -50;px
+    bottom: 100px;px
   }
   
 }
