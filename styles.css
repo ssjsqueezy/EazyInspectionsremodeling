@@ -168,6 +168,14 @@ footer {
 
 @media (max-width: 768px) {
 
+  footer {
+  background-color: transparent;
+  padding: 1rem 2rem;
+  text-align: right;
+  position: absolute;
+  bottom: 20px;
+  }
+
 .social-icons {
     bottom: -10px; /* 👈 Move icons further down */
     padding-top: 20px;
